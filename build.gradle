@@ -1,7 +1,22 @@
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.1'
+    }
+}
+plugins {
+    id "com.jfrog.bintray" version "1.1"
+}
+
 apply plugin: 'java'
+apply plugin: 'com.jfrog.bintray'
+apply plugin: 'maven'
 
 sourceCompatibility = 1.8
-version = '1.0'
+version = '0.1'
+group = 'de.fhb.ca.dto'
 
 repositories {
     mavenCentral()
@@ -12,3 +27,38 @@ dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.11'
     compile('org.projectlombok:lombok:1.16.4')
 }
+
+bintray {
+    user = 'm-a-x-g'
+    key = System.properties['bintrayApiKey'] //property from gradle.config
+
+    configurations = ['published']
+    dryRun = false //Whether to run this as dry-run, without deploying
+    publish = true //If version should be auto published after an upload
+    pkg {
+        repo = 'maven'
+        name = 'CampusAppDTOs'
+    }
+
+
+}
+configurations {
+    published
+}
+
+task sourceJar(type: Jar) {
+    from sourceSets.main.allSource
+    classifier = 'sources'
+}
+task javadocJar(type: Jar, dependsOn: javadoc) {
+    classifier = 'javadoc'
+    from javadoc.destinationDir
+}
+
+// Add the sourceJars to non-extractor modules
+artifacts {
+    published sourceJar
+    published javadocJar
+    published jar
+}
+

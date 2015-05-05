@@ -2,7 +2,7 @@ package de.fhb.ca.dto;
 
 import java.util.List;
 
-import de.fhb.caeb.dto.util.MultipleChoiceQuestion;
+import de.fhb.ca.dto.util.MultipleChoiceQuestion;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
