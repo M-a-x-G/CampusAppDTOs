@@ -11,6 +11,6 @@
  }
  
  dependencies {
-    compile 'de.fhb.ca.dto:CADtos:0.2'
+    compile 'de.fhb.ca.dto:CADtos:0.3'
 }
 ```
