@@ -9,5 +9,6 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class RequestDTO {
     private String accessCode;
+    private String deviceID;
     private String studyPath;
 }

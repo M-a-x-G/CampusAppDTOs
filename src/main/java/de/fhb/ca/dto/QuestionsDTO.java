@@ -11,7 +11,8 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class QuestionsDTO {
-    private String token;
+    private String evaluationUID;
+    private String voteToken;
     private List<String> textQuestions;
     private List<MultipleChoiceQuestion> multipleChoiceQuestions;
 }
