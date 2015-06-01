@@ -10,9 +10,8 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class AnswersDTO {
-
-    private String token;
-    private Map<String, String> textAnswers;
-    private Map<String, Short> mcAnswers;
+    private String voteToken;
+    private String innerSection;
+    private Map<String, String> answers;
 
 }
