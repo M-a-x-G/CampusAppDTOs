@@ -15,7 +15,7 @@ apply plugin: 'com.jfrog.bintray'
 apply plugin: 'maven'
 
 sourceCompatibility = 1.7
-version = '0.6'
+version = '0.7'
 group = 'de.fhb.ca.dto'
 
 repositories {
