@@ -9,4 +9,5 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class RequestDTO {
     private String deviceID;
+    private String evaluationUID;
 }
