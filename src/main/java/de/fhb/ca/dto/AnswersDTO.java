@@ -11,7 +11,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class AnswersDTO {
     private String voteToken;
-    private String innerSection;
+    private String studyPath;
     private Map<String, String> answers;
 
 }
