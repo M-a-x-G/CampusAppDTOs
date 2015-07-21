@@ -11,7 +11,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class QuestionsDTO {
-    private List<String> innerSections;
+    private List<String> studyPaths;
     private List<String> textQuestions;
     private List<MultipleChoiceQuestion> multipleChoiceQuestions;
 }

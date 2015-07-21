@@ -9,4 +9,5 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class ResponseDTO {
     private String message;
+    private int type;
 }
