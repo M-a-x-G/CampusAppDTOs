@@ -17,4 +17,6 @@ public class AnswersDTO {
     private String studyPath;
     @NonNull
     private Map<String, String> answers;
+    @NonNull
+    private String deviceID;
 }
