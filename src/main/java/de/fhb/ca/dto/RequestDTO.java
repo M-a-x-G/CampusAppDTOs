@@ -11,4 +11,7 @@ import lombok.NonNull;
 public class RequestDTO {
     @NonNull
     private String voteToken;
+
+    @NonNull
+    private String deviceID;
 }
