@@ -1,6 +1,6 @@
 # Campus App Evaluation Module DTO's
 
- [ ![Download](https://api.bintray.com/packages/m-a-x-g/maven/CampusAppDTOs/images/download.svg)](https://bintray.com/m-a-x-g/maven/CampusAppDTOs/_latestVersion)
+ [ ![Download](https://api.bintray.com/packages/m-a-x-g/maven/CampusAppDTOs/images/download.svg)](https://bintray.com/m-a-x-g/maven/CampusAppDTOs/_latestVersion) [![Build Status](https://travis-ci.org/M-a-x-G/CampusAppDTOs.svg?branch=master)](https://travis-ci.org/M-a-x-G/CampusAppDTOs)
  
   add in build.gradle file:
  ```groovy
