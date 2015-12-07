@@ -31,7 +31,7 @@ dependencies {
 bintray {
     user = 'm-a-x-g'
 //    key = System.properties['bintrayApiKey'] //property from gradle.config
-    key = $bintrayApiKey //property from gradle.config
+    key = hasProperty('bintrayApiKey') ? bintrayApiKey : System.getenv('bintrayApiKey') //property from gradle.config
 
     configurations = ['published']
     dryRun = true //Whether to run this as dry-run, without deploying
