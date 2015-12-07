@@ -1,15 +1,20 @@
 package de.fhb.ca.dto.util;
 
-import java.util.List;
-
 import lombok.AllArgsConstructor;
-import lombok.Data;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 
-@Data
+/**
+ * Created by Admin on 07.12.2015.
+ */
 @NoArgsConstructor
 @AllArgsConstructor
-public class MultipleChoiceQuestion {
+@Setter
+@Getter
+public class Choice {
+
     private String text;
-    private List<Choice> choices;
+    private short grade;
+
 }
