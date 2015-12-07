@@ -1,9 +1,9 @@
 language: java
 jdk:
-- oraclejdk7
+  - oraclejdk7
 sudo: false
-
-gradle bintrayUpload
+script:
+  - gradle bintrayUpload
 
 #deploy:
 #  provider: bintray
