@@ -4,14 +4,3 @@ jdk:
 sudo: false
 script:
   - gradle bintrayUpload
-
-#deploy:
-#  provider: bintray
-#  user: m-a-x-g
-#  file:
-#
-#  key:
-#    secure: byhN+eVf9b1LlpnOlL3J+EIee+hIkzthOk5+mfximsW1sO1zzu2qVgSmTK7iINJjuGrzD9t9EzQ8dDA3Qa0S9kzpkS9vcoG06zBgSGBngOgLSkYlNHEPsgFimu0mbiNkdVH//XrV3goPlS8/23cU6ObXrmf4d+BV+tWVQOsLYYY=
-#  dry-run: true
-#  on:
-#    tags: true
