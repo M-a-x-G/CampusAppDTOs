@@ -12,7 +12,7 @@ import lombok.Setter;
 @AllArgsConstructor
 @Setter
 @Getter
-public class Choice {
+public class ChoiceDTO {
 
     private String text;
     private short grade;

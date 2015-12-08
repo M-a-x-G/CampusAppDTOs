@@ -11,5 +11,5 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class MultipleChoiceQuestion {
     private String text;
-    private List<Choice> choices;
+    private List<ChoiceDTO> choices;
 }
