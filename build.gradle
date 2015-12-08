@@ -7,7 +7,7 @@ buildscript {
     }
 }
 plugins {
-    id "com.jfrog.bintray" version "1.1"
+    id "com.jfrog.bintray" version "1.4"
 }
 
 apply plugin: 'java'
@@ -30,7 +30,8 @@ dependencies {
 
 bintray {
     user = 'm-a-x-g'
-    key = System.properties['bintrayApiKey'] //property from gradle.config
+//    key = System.properties['bintrayApiKey'] //property from gradle.config
+    key = hasProperty('bintrayApiKey') ? bintrayApiKey : System.getenv('bintrayApiKey') //property from gradle.config
 
     configurations = ['published']
     dryRun = false //Whether to run this as dry-run, without deploying
