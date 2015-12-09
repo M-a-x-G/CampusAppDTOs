@@ -5,6 +5,11 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
+import java.io.Serializable;
+
 /**
  * Created by Admin on 07.12.2015.
  */
@@ -12,9 +17,20 @@ import lombok.Setter;
 @AllArgsConstructor
 @Setter
 @Getter
-public class ChoiceDTO {
+public class ChoiceDTO implements Serializable{
 
     private String text;
     private short grade;
+
+    private void writeObject(ObjectOutputStream out) throws IOException {
+        out.writeUTF(text);
+        out.writeInt(grade);
+    }
+
+    private void readObject(ObjectInputStream in) throws IOException, ClassNotFoundException {
+        text = in.readUTF();
+        grade = (short) in.readInt();
+    }
+
 
 }
