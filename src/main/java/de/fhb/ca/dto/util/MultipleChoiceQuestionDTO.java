@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class MultipleChoiceQuestion {
+public class MultipleChoiceQuestionDTO {
     private String text;
     private List<ChoiceDTO> choices;
 }
