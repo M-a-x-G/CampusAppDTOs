@@ -2,6 +2,7 @@ package de.fhb.ca.dto;
 
 import java.util.List;
 
+import de.fhb.ca.dto.util.ChoiceDTO;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -9,8 +10,7 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class QuestionsDTO {
-    private List<String> studyPaths;
-    private List<String> textQuestions;
-    private List<MultipleChoiceQuestionDTO> multipleChoiceQuestionDTOs;
+public class MultipleChoiceQuestionDTO {
+    private String text;
+    private List<ChoiceDTO> choices;
 }

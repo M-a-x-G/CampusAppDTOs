@@ -22,11 +22,13 @@ public class ChoiceDTO implements Serializable{
     private String text;
     private short grade;
 
+    @Deprecated // this method don't belong in a dto
     private void writeObject(ObjectOutputStream out) throws IOException {
         out.writeUTF(text);
         out.writeInt(grade);
     }
 
+    @Deprecated // this method don't belong in a dto
     private void readObject(ObjectInputStream in) throws IOException, ClassNotFoundException {
         text = in.readUTF();
         grade = (short) in.readInt();
