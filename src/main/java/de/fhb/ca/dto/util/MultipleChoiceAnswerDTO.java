@@ -8,7 +8,7 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class MultibleChoiceAnswerDTO {
-    private String text;
+public class MultipleChoiceAnswerDTO {
+    private String questionText;
     private ChoiceDTO choice;
 }

@@ -2,8 +2,8 @@ package de.fhb.ca.dto;
 
 import java.util.List;
 
-import de.fhb.ca.dto.util.AnswerDTO;
-import de.fhb.ca.dto.util.MultibleChoiceAnswerDTO;
+import de.fhb.ca.dto.util.TextAnswerDTO;
+import de.fhb.ca.dto.util.MultipleChoiceAnswerDTO;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -18,9 +18,9 @@ public class AnswersDTO {
     @NonNull
     private String studyPath;
     @NonNull
-    private List<AnswerDTO> answers;
+    private List<TextAnswerDTO> textAnswers;
     @NonNull
-    private List<MultibleChoiceAnswerDTO> mcAnswers;
+    private List<MultipleChoiceAnswerDTO> mcAnswers;
     @NonNull
     private String deviceID;
 }

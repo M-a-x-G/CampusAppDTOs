@@ -19,18 +19,18 @@ import java.io.Serializable;
 @Getter
 public class ChoiceDTO implements Serializable{
 
-    private String text;
+    private String choiceText;
     private short grade;
 
     @Deprecated // this method don't belong in a dto
     private void writeObject(ObjectOutputStream out) throws IOException {
-        out.writeUTF(text);
+        out.writeUTF(choiceText);
         out.writeInt(grade);
     }
 
     @Deprecated // this method don't belong in a dto
     private void readObject(ObjectInputStream in) throws IOException, ClassNotFoundException {
-        text = in.readUTF();
+        choiceText = in.readUTF();
         grade = (short) in.readInt();
     }
 
