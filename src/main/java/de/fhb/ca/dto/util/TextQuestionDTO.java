@@ -1,4 +1,4 @@
-package de.fhb.ca.dto;
+package de.fhb.ca.dto.util;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -8,9 +8,9 @@ import lombok.NonNull;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class ResponseDTO {
+public class TextQuestionDTO {
     @NonNull
-    private String message;
+    private int questionID;
     @NonNull
-    private int type;
+    private String questionText;
 }
