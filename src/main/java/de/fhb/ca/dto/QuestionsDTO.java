@@ -18,4 +18,6 @@ public class QuestionsDTO {
     private List<TextQuestionDTO> textQuestions;
     @NonNull
     private List<MultipleChoiceQuestionDTO> multipleChoiceQuestionDTOs;
+    @NonNull
+    private Boolean textQuestionsFirst;
 }
