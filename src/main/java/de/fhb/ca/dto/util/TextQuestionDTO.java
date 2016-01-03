@@ -13,4 +13,8 @@ public class TextQuestionDTO {
     private int questionID;
     @NonNull
     private String questionText;
+    @NonNull
+    private Boolean onlyNumbers;
+    @NonNull
+    private Integer maxLength;
 }
