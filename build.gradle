@@ -15,8 +15,8 @@ apply plugin: 'com.jfrog.bintray'
 apply plugin: 'maven'
 
 sourceCompatibility = 1.7
-version = '1.13'
-group = 'de.fhb.ca.dto'
+version = '1.14'
+group = 'de.thb.ue.dto'
 
 repositories {
     mavenCentral()
@@ -30,7 +30,6 @@ dependencies {
 
 bintray {
     user = 'm-a-x-g'
-//    key = System.properties['bintrayApiKey'] //property from gradle.config
     key = hasProperty('bintrayApiKey') ? bintrayApiKey : System.getenv('bintrayApiKey') //property from gradle.config
 
     configurations = ['published']
@@ -38,7 +37,7 @@ bintray {
     publish = true //If version should be auto published after an upload
     pkg {
         repo = 'maven'
-        name = 'CampusAppDTOs'
+        name = 'UniversityEvaluationDTOs'
     }
 
 
