@@ -1,6 +1,6 @@
 # University Evaluation DTO's
 
- [ ![Download](https://api.bintray.com/packages/m-a-x-g/maven/CampusAppDTOs/images/download.svg)](https://bintray.com/m-a-x-g/maven/CampusAppDTOs/_latestVersion) [![Build Status](https://travis-ci.org/M-a-x-G/CampusAppDTOs.svg?branch=master)](https://travis-ci.org/M-a-x-G/CampusAppDTOs)
+ [ ![Download](https://api.bintray.com/packages/m-a-x-g/maven/UniversityEvaluationDTOs/images/download.svg)](https://bintray.com/m-a-x-g/maven/UniversityEvaluationDTOs/_latestVersion) [![Build Status](https://travis-ci.org/TH-Brandenburg/University-Evaluation-DTOs.svg?branch=master)](https://travis-ci.org/TH-Brandenburg/University-Evaluation-DTOs)
  
   add in build.gradle file:
  ```groovy
@@ -11,14 +11,14 @@
  }
  
  dependencies {
-    compile 'de.fhb.ca.dto:CADtos:1.13'
+    compile 'de.thb.ue.dto:UE-DTOs:1.14'
 }
 ```
 
 
 
 This project presents a software solution of the evaluation
-problem faced by universities. The software consists of a REST-server (Github: CampusAppEvalBackend) application and to date this Android client project. The software
+problem faced by universities. The software
 features automated processing of given answers, independency
 of location, a flexible data model supporting multiple questionnaires
 and an interface designed to be used effectively upon first
