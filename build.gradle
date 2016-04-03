@@ -29,7 +29,7 @@ dependencies {
 }
 
 bintray {
-    user = 'thb'
+    user = 'M-a-x-G'
     key = hasProperty('bintrayApiKey') ? bintrayApiKey : System.getenv('bintrayApiKey') //property from gradle.config
 
     configurations = ['published']
@@ -38,6 +38,9 @@ bintray {
     pkg {
         repo = 'maven'
         name = 'UniversityEvaluationDTOs'
+        userOrg = 'thb'
+        licenses = ['Apache-2.0']
+        vcsUrl = 'https://github.com/TH-Brandenburg/University-Evaluation-DTOs'
     }
 
 
