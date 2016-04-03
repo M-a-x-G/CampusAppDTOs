@@ -28,9 +28,9 @@ to see if it reaches this goal.
 
 # Related projects
 
-* OpenUniversityEvaluation Backend
-* OpenUniversityEvaluation Android App
-* OpenUniversityEvaluation Windows Phone App (under construction)
+* [University Evaluation Backend](https://github.com/TH-Brandenburg/University-Evaluation-Backend)
+* [University Evaluation Android App](https://github.com/TH-Brandenburg/University-Evaluation-Android)
+* [University Evaluation Windows Phone App (under construction)](https://github.com/TH-Brandenburg/University-Evaluation-Windows-Phone)
 
 # Licenses of used software
 
