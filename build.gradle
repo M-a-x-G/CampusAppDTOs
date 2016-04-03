@@ -29,7 +29,7 @@ dependencies {
 }
 
 bintray {
-    user = 'm-a-x-g'
+    user = 'thb'
     key = hasProperty('bintrayApiKey') ? bintrayApiKey : System.getenv('bintrayApiKey') //property from gradle.config
 
     configurations = ['published']
